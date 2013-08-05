@@ -54,8 +54,10 @@ You know how to do!
 
 
 == Changelog ==
+
 = 1.1 =
 * Images path corrections
+
 = 1.0 =
 * First version of the system
 
