@@ -17,7 +17,7 @@ The goal of this plugin is to display information about the Environment in which
 By enabling this plugin some new options will be coupled to the main menu wordpress namely:
 
 
-Host Info:
+Host Infos:
 
 
  * Here you will be able to see a number of important settings of the Environment where wordpress is installed.
