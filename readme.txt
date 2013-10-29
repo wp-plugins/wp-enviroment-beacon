@@ -70,6 +70,12 @@ You know how to do!
 
 == Changelog ==
 
+= 1.2 =
+1. Warnings fixed
+2. Internationalization support
+3. Portuguese - Brazil language support 
+
+
 = 1.1 =
 * Images path corrections
 
