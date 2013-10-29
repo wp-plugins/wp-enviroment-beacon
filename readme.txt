@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: joelgarciajr84
+Contributors: joelgarciajr84, janynnegomes
 Donate link: http://joelgarciajr.com.br
 Tags: servers, host, informations, php, phpinfo, settings
 Requires at least: 3.0
