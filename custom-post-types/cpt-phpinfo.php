@@ -41,24 +41,21 @@ $args = array(
     );
     register_post_type( 'phpinfo', $args );
 }
-?>
-<?php
+
 // metabox to show phpinfo()
 
 add_action( 'add_meta_boxes', 'phpinfo_add_meta_box' );
- 
-function phpinfo_add_meta_box() {
-add_meta_box(
-  'phpinfo_metaboxid',
-  __('All Php Settings from this Server','wpeb'),
-  'phpinfo_inner_meta_box',
-  'phpinfo',
-  'normal'
-);
-}
- 
-function phpinfo_inner_meta_box( $phpinfo ) {
- phpinfo();
 
+function phpinfo_add_meta_box() {
+	add_meta_box(
+		'phpinfo_metaboxid',
+		__('All Php Settings from this Server','wpeb'),
+		'phpinfo_inner_meta_box',
+		'phpinfo',
+		'normal'
+	);
 }
-?>
+
+function phpinfo_inner_meta_box( $phpinfo ) {
+ 	phpinfo();
+}

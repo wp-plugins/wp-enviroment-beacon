@@ -41,25 +41,20 @@ $args = array(
     );
     register_post_type( 'whoami', $args );
 }
-?>
-<?php
-// METABOX TO SHOW RESULTS
 
 add_action( 'add_meta_boxes', 'whoami2_add_meta_box' );
  
 function whoami2_add_meta_box() {
-add_meta_box(
-  'whoami2_metaboxid',
-  __('LocalHost Informations','wpeb'),
-  'whoami2_inner_meta_box',
-  'whoami',
-  'normal'
-);
+	add_meta_box(
+		'whoami2_metaboxid',
+		__('LocalHost Informations','wpeb'),
+		'whoami2_inner_meta_box',
+		'whoami',
+		'normal'
+	);
 }
  
-function whoami2_inner_meta_box( $whoami ) {
-
-?>
+function whoami2_inner_meta_box( $whoami ) {?>
 <p>
   <label for="http_host"><?php _e('HTTP_HOST:','wpeb'); ?></label>
   <br />
@@ -212,8 +207,6 @@ function whoami2_inner_meta_box( $whoami ) {
 </p>
 <?php
 }
-?>
-<?php
 add_action( 'save_post', 'salva_meta_whoami', 10, 2 );
 
 function salva_meta_whoami( $whoami_id, $whoami ) {
@@ -276,4 +269,3 @@ function salva_meta_whoami( $whoami_id, $whoami ) {
 
   return true;
 }
-?>

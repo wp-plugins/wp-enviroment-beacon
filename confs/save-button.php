@@ -7,8 +7,7 @@
 		function change_publish_button( $translation, $text ) {
 
 		if ( $text == 'Publish' & 'whoami' == get_post_type() ) 
-    	$translation = __('Save This Configuration','wpeb');
-
+    			$translation = __('Save This Configuration','wpeb');
 		return $translation;
 	}
 ?>
