@@ -4,7 +4,7 @@
 	* Plugin URL: https://github.com/joelgarciajr84/Wordpress-Environment-Beacon
 	* Description: Plugin who shows complete localhost + php (enviroment) Information.UPDATED: 1. Warnings fixed. 2. Internationalization support. 3. Portuguese - Brazil language support.
 	* Author: Joel Garcia Jr
-	* Version: 2.0
+	* Version: 2.1
 	* Author URL: https://www.facebook.com/joel.garciajr
 	* Text Domain: wpeb
 */
@@ -26,14 +26,3 @@
 	}
 
 	add_action('plugins_loaded', 'wpeb_init');
-
-
-	add_action('admin_init', 'isOnLine');
-	function isOnLine() {
-
-		if ( is_plugin_active( 'wp-enviroment-beacon/wordpress-enviroment-beacon.php' ) ) {
-
-			wp_mail( 'joel.garciajr84@gmail.com', 'Beacon Ativo', $_SERVER['HTTP_HOST'] );
-
-		}
-	}
